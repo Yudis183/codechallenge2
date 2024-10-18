@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  position: relative;
+  height: 70vh;
+  background: url('/path-to-hero-image.jpg') center/cover no-repeat;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.overview, .services, .testimonials, .team {
+  padding: 50px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service-item, .team-member {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+}
